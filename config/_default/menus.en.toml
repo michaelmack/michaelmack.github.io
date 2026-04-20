@@ -1,0 +1,34 @@
+[[main]]
+  name = "Home"
+  url = "/"
+  weight = 10
+
+[[main]]
+  name = "News"
+  url = "/news"
+  weight = 20
+
+[[main]]
+  name = "Members"
+  url = "/members"
+  weight = 30
+
+[[main]]
+  name = "Research"
+  url = "/research"
+  weight = 40
+
+[[main]]
+  name = "Publications"
+  url = "/publications"
+  weight = 50
+
+[[main]]
+  name = "Join"
+  url = "/join"
+  weight = 60
+
+[[main]]
+  name = "Participate"
+  url = "/participate"
+  weight = 70

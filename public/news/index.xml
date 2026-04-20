@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>News on Mack Lab @ UofT</title>
+    <link>http://localhost:1313/news/</link>
+    <description>Recent content in News on Mack Lab @ UofT</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+    <lastBuildDate>Fri, 27 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/news/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>New paper on functional footprints published in PNAS!</title>
+      <link>http://localhost:1313/news/2026-02-27-pnas/</link>
+      <pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/news/2026-02-27-pnas/</guid>
+      <description>&lt;p&gt;Our latest research on functional footprints has been published in the Proceedings of the National Academy of Sciences (PNAS).&lt;/p&gt;&#xA;&lt;p&gt;Check it out to learn more about how attention and memory interact during learning!&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Congratulations, Dr. Gumus!</title>
+      <link>http://localhost:1313/news/2025-08-20-gumus/</link>
+      <pubDate>Wed, 20 Aug 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/news/2025-08-20-gumus/</guid>
+      <description>&lt;p&gt;Giant congratulations to the newest Dr. in the lab, Dr. Gumus!&lt;/p&gt;&#xA;&lt;p&gt;We are so proud of your hard work and successful defense. Well done!&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Congratulations, Dr. Perovic!</title>
+      <link>http://localhost:1313/news/2025-07-21-perovic/</link>
+      <pubDate>Mon, 21 Jul 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/news/2025-07-21-perovic/</guid>
+      <description>&lt;p&gt;Another doctor in the house! Congratulations to Dr. Perovic on a successful defense.&lt;/p&gt;&#xA;&lt;p&gt;Excellent work and a well-deserved result!&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>

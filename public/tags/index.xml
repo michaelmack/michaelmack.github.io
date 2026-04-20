@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Mack Lab @ UofT</title>
+    <link>http://localhost:1313/tags/</link>
+    <description>Recent content in Tags on Mack Lab @ UofT</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+    <lastBuildDate>Fri, 27 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>PNAS</title>
+      <link>http://localhost:1313/tags/pnas/</link>
+      <pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/pnas/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Publication</title>
+      <link>http://localhost:1313/tags/publication/</link>
+      <pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/publication/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Research</title>
+      <link>http://localhost:1313/tags/research/</link>
+      <pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/research/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Achievement</title>
+      <link>http://localhost:1313/tags/achievement/</link>
+      <pubDate>Wed, 20 Aug 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/achievement/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Congratulations</title>
+      <link>http://localhost:1313/tags/congratulations/</link>
+      <pubDate>Wed, 20 Aug 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/congratulations/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>PhD</title>
+      <link>http://localhost:1313/tags/phd/</link>
+      <pubDate>Wed, 20 Aug 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/phd/</guid>
+      <description></description>
+      
+    </item>
+    
+  </channel>
+</rss>

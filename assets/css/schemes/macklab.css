@@ -1,0 +1,26 @@
+:root {
+  --color-neutral: 255, 255, 255;
+  /* Neutral scale based on #081f4b */
+  --color-neutral-50: 248, 250, 252;
+  --color-neutral-100: 241, 245, 249;
+  --color-neutral-200: 226, 232, 240;
+  --color-neutral-300: 203, 213, 225;
+  --color-neutral-400: 148, 163, 184;
+  --color-neutral-500: 100, 116, 139;
+  --color-neutral-600: 71, 85, 105;
+  --color-neutral-700: 51, 65, 85;
+  --color-neutral-800: 30, 41, 59;
+  --color-neutral-900: 8, 31, 75; /* Background */
+
+  /* Primary scale based on #00adef */
+  --color-primary-50: 235, 251, 255;
+  --color-primary-100: 204, 243, 255;
+  --color-primary-200: 153, 231, 255;
+  --color-primary-300: 102, 219, 255;
+  --color-primary-400: 51, 207, 255;
+  --color-primary-500: 0, 173, 239; /* Accent */
+  --color-primary-600: 0, 155, 215;
+  --color-primary-700: 0, 137, 191;
+  --color-primary-800: 0, 119, 167;
+  --color-primary-900: 0, 101, 143;
+}

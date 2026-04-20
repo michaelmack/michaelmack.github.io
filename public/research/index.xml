@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Researches on Mack Lab @ UofT</title>
+    <link>http://localhost:1313/research/</link>
+    <description>Recent content in Researches on Mack Lab @ UofT</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+    <lastBuildDate>Tue, 14 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/research/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Attentional Processes</title>
+      <link>http://localhost:1313/research/attentional-processes/</link>
+      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/research/attentional-processes/</guid>
+      <description>&lt;p&gt;Attention is a filtering mechanism that helps us focus on what matters. We investigate how attentional biases are formed and how they influence learning.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Category Learning</title>
+      <link>http://localhost:1313/research/category-learning/</link>
+      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/research/category-learning/</guid>
+      <description>&lt;p&gt;How do we learn to group items into categories? Our lab explores the underlying cognitive and neural processes involved in category acquisition.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Neural Mechanisms</title>
+      <link>http://localhost:1313/research/neural-mechanisms/</link>
+      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/research/neural-mechanisms/</guid>
+      <description>&lt;p&gt;Using fMRI and other neuroimaging techniques, we map the neural correlates of learning and memory.&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>

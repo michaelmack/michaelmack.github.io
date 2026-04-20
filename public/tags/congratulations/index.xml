@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Congratulations on Mack Lab @ UofT</title>
+    <link>http://localhost:1313/tags/congratulations/</link>
+    <description>Recent content in Congratulations on Mack Lab @ UofT</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+    <lastBuildDate>Wed, 20 Aug 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/congratulations/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Congratulations, Dr. Gumus!</title>
+      <link>http://localhost:1313/news/2025-08-20-gumus/</link>
+      <pubDate>Wed, 20 Aug 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/news/2025-08-20-gumus/</guid>
+      <description>&lt;p&gt;Giant congratulations to the newest Dr. in the lab, Dr. Gumus!&lt;/p&gt;&#xA;&lt;p&gt;We are so proud of your hard work and successful defense. Well done!&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Congratulations, Dr. Perovic!</title>
+      <link>http://localhost:1313/news/2025-07-21-perovic/</link>
+      <pubDate>Mon, 21 Jul 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/news/2025-07-21-perovic/</guid>
+      <description>&lt;p&gt;Another doctor in the house! Congratulations to Dr. Perovic on a successful defense.&lt;/p&gt;&#xA;&lt;p&gt;Excellent work and a well-deserved result!&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>

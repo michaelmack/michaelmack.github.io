@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mack Lab @ UofT</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Mack Lab @ UofT</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+    <lastBuildDate>Tue, 14 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Attentional Processes</title>
+      <link>http://localhost:1313/research/attentional-processes/</link>
+      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/research/attentional-processes/</guid>
+      <description>&lt;p&gt;Attention is a filtering mechanism that helps us focus on what matters. We investigate how attentional biases are formed and how they influence learning.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Category Learning</title>
+      <link>http://localhost:1313/research/category-learning/</link>
+      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/research/category-learning/</guid>
+      <description>&lt;p&gt;How do we learn to group items into categories? Our lab explores the underlying cognitive and neural processes involved in category acquisition.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Neural Mechanisms</title>
+      <link>http://localhost:1313/research/neural-mechanisms/</link>
+      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/research/neural-mechanisms/</guid>
+      <description>&lt;p&gt;Using fMRI and other neuroimaging techniques, we map the neural correlates of learning and memory.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>New paper on functional footprints published in PNAS!</title>
+      <link>http://localhost:1313/news/2026-02-27-pnas/</link>
+      <pubDate>Fri, 27 Feb 2026 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/news/2026-02-27-pnas/</guid>
+      <description>&lt;p&gt;Our latest research on functional footprints has been published in the Proceedings of the National Academy of Sciences (PNAS).&lt;/p&gt;&#xA;&lt;p&gt;Check it out to learn more about how attention and memory interact during learning!&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Congratulations, Dr. Gumus!</title>
+      <link>http://localhost:1313/news/2025-08-20-gumus/</link>
+      <pubDate>Wed, 20 Aug 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/news/2025-08-20-gumus/</guid>
+      <description>&lt;p&gt;Giant congratulations to the newest Dr. in the lab, Dr. Gumus!&lt;/p&gt;&#xA;&lt;p&gt;We are so proud of your hard work and successful defense. Well done!&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Congratulations, Dr. Perovic!</title>
+      <link>http://localhost:1313/news/2025-07-21-perovic/</link>
+      <pubDate>Mon, 21 Jul 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/news/2025-07-21-perovic/</guid>
+      <description>&lt;p&gt;Another doctor in the house! Congratulations to Dr. Perovic on a successful defense.&lt;/p&gt;&#xA;&lt;p&gt;Excellent work and a well-deserved result!&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Dr. Michael Mack</title>
+      <link>http://localhost:1313/members/michael-mack/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/members/michael-mack/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Michael Mack&lt;/strong&gt; is an Associate Professor in the Department of Psychology at the University of Toronto.&lt;/p&gt;&#xA;&lt;p&gt;His research interests include&amp;hellip; (Add more detail here).&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Join the Lab</title>
+      <link>http://localhost:1313/join/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/join/</guid>
+      <description>&lt;p&gt;We are always looking for motivated undergraduate and graduate students, as well as postdoctoral fellows, who are interested in the intersection of attention and memory.&lt;/p&gt;&#xA;&lt;p&gt;If you are interested in joining the Mack Lab, please send an email to &lt;strong&gt;Dr. Michael Mack&lt;/strong&gt; (&lt;a href=&#34;mailto:michael.mack@utoronto.ca&#34; &gt;michael.mack@utoronto.ca&lt;/a&gt;) with your CV and a brief statement of your research interests.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Participate in Our Research</title>
+      <link>http://localhost:1313/participate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/participate/</guid>
+      <description>&lt;p&gt;Interested in participating in our studies? We are frequently looking for participants for our behavioral and neuroimaging experiments!&lt;/p&gt;&#xA;&#xA;&lt;h3 class=&#34;relative group&#34;&gt;How to sign up&#xA;    &lt;div id=&#34;how-to-sign-up&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;&#xA;    &#xA;    &lt;span&#xA;        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none&#34;&gt;&#xA;        &lt;a class=&#34;text-primary-300 dark:text-neutral-700 !no-underline&#34; href=&#34;#how-to-sign-up&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;&#xA;    &lt;/span&gt;&#xA;    &#xA;&lt;/h3&gt;&#xA;&lt;p&gt;Please check out our current studies on the &lt;a href=&#34;https://utoronto.sonona-systems.com/&#34;  target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;University of Toronto Psychology Participation Pool&lt;/a&gt; or contact us directly at [EMAIL_ADDRESS] for more information.&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>

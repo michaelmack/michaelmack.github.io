@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Members on Mack Lab @ UofT</title>
+    <link>http://localhost:1313/members/</link>
+    <description>Recent content in Members on Mack Lab @ UofT</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+    <atom:link href="http://localhost:1313/members/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Dr. Michael Mack</title>
+      <link>http://localhost:1313/members/michael-mack/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/members/michael-mack/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Michael Mack&lt;/strong&gt; is an Associate Professor in the Department of Psychology at the University of Toronto.&lt;/p&gt;&#xA;&lt;p&gt;His research interests include&amp;hellip; (Add more detail here).&lt;/p&gt;</description>
+      
+    </item>
+    
+  </channel>
+</rss>

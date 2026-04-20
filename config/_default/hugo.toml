@@ -1,0 +1,15 @@
+baseURL = "https://michaelmack.github.io/"
+languageCode = "en-us"
+title = "Mack Lab @ UofT"
+theme = "blowfish"
+
+defaultContentLanguage = "en"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  author = "authors"
+  series = "series"

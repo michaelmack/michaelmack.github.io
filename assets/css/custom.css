@@ -1,0 +1,208 @@
+@font-face {
+  font-family: cabin;
+  src: url('/fonts/Cabin-VariableFont_wdth,wght.ttf');
+}
+
+/* html {
+  font-family: cabin;
+  font-size: 14px;
+} */
+
+.main-menu {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.logo {
+  max-width: calc(var(--spacing) * 75) !important;
+}
+
+/* Home Page Grid Layout */
+.featured-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  margin-top: 0rem;
+  margin-bottom: 1.5rem;
+}
+
+.mission-statement h1 {
+  font-size: 2rem !important;
+}
+
+.mission-statement {
+  font-size: 1.2rem !important;
+}
+
+
+@media (min-width: 768px) {
+  .featured-grid {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+/* Sidebar Styling */
+.recent-news-sidebar h2 {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  font-size: 1.5rem !important;
+  padding-bottom: 0rem !important;
+}
+
+.recent-news-sidebar section {
+  margin-top: 1rem !important;
+}
+
+/* News Item Stylings with Accent */
+.recent-news-sidebar .article-link--simple {
+  border-left: 3px solid #00adef;
+  padding-left: 1rem;
+  margin-bottom: 0.5rem !important;
+  transition: all 0.2s ease;
+}
+
+.recent-news-sidebar .article-link--simple:hover {
+  background-color: rgba(0, 173, 239, 0.05);
+}
+
+.recent-news-sidebar .article-link--simple h2 {
+  font-size: 1rem !important;
+  margin-bottom: 0.1rem !important;
+  border-bottom: none !important;
+}
+
+.footer-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 1rem;
+  padding-top: 2.5rem;
+  justify-content: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-flex section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  min-width: 300px;
+}
+
+.footer-flex section h2 {
+  font-size: 1.5rem !important;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.footer-flex section h2 a {
+  display: block;
+  font-size: 1.5rem !important;
+  text-decoration: none !important;
+  padding-bottom: 1rem;
+}
+
+.footer-flex section h2 a:hover {
+  text-decoration: underline !important;
+  text-decoration-color: rgba(0, 173, 239, 0.75) !important;
+  text-decoration-thickness: 2px !important;
+}
+
+.footer-map-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.footer-map-section {
+  min-width: 500px !important;
+}
+
+@media (max-width: 768px) {
+  .footer-map-section {
+    min-width: 100% !important;
+  }
+}
+
+.footer-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  gap: 2rem;
+}
+
+.footer-bottom {
+  text-align: right;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 2rem;
+  padding-top: 1rem;
+}
+
+.cbtc-background {
+  background-image: url("../images/cbtc-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 80%;
+  padding: 2rem 2rem;
+  border-radius: 1rem;
+}
+
+.cbtc-background section {
+  margin: 0 auto;
+  font-size: 1.1rem;
+  color: white;
+}
+
+.cbtc-background a:hover {
+  text-decoration: underline !important;
+  text-decoration-color: rgba(0, 173, 239, 0.75) !important;
+  text-decoration-thickness: 2px !important;
+}
+
+/* Icon row on home page */
+.icon-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+  justify-content: center;
+}
+
+.icon-row a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 173, 239, 0.75);
+  color: white !important;
+  text-decoration: none !important;
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+  min-width: 200px;
+  flex: 1;
+  max-width: 300px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.icon-row a:hover {
+  background-color: #039edc;
+  text-decoration: none !important;
+  transform: translateY(-8px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.icon-row .icon {
+  font-size: 4rem !important;
+  color: white;
+  margin-bottom: 0rem;
+  margin-top: 0.5rem;
+}
