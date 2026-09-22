@@ -1,0 +1,221 @@
+{{ define "main" }}
+{{ .Scratch.Set "scope" "list" }}
+{{ $enableToc := .Params.showTableOfContents | default (site.Params.list.showTableOfContents | default false) }}
+{{ $showToc := and $enableToc (in .TableOfContents "<ul") }} <style>
+  .news-article {
+    clear: both;
+    display: block;
+    margin-bottom: 2.5rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .news-article:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  html:not(.dark) .news-article {
+    border-bottom-color: rgba(0, 0, 0, 0.1);
+  }
+  .news-article::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .news-featured-image-wrapper {
+  float: right;
+  margin-left: 1rem;
+  margin-bottom: 0.75rem;
+  width: 120px;
+  flex-shrink: 0;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  }
+  @media (min-width: 768px) {
+  .news-featured-image-wrapper {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+  width: 400px;
+  }
+  }
+  .news-featured-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  }
+
+  /* Year Navigation Styling */
+  html {
+  scroll-behavior: smooth;
+  }
+  .news-year-nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 0px solid rgba(156, 163, 175, 0.25);
+  }
+  .dark .news-year-nav {
+  border-bottom-color: rgba(75, 85, 99, 0.4);
+  }
+  .news-year-label {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+  color: #00adef;
+  }
+  .news-year-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  }
+  .news-year-btn {
+  display: inline-block;
+  padding: 0.35rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  border: 1px solid rgba(0, 173, 239, 0.3);
+  color: #00adef !important;
+  text-decoration: none !important;
+  background-color: rgba(0, 173, 239, 0.05);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .news-year-btn:hover {
+  background-color: #00adef;
+  color: #ffffff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 173, 239, 0.3);
+  }
+  .news-year-btn:active {
+  transform: translateY(0);
+  }
+  .news-group-header {
+  scroll-margin-top: 100px;
+  }
+  </style>
+
+  {{/* Hero */}}
+  {{ if site.Params.list.showHero | default false }}
+  {{ $heroStyle := print "hero/" site.Params.list.heroStyle ".html" }}
+  {{ if templates.Exists ( printf "partials/%s" $heroStyle ) }}
+  {{ partial $heroStyle . }}
+  {{ else }}
+  {{ partial "hero/basic.html" . }}
+  {{ end }}
+  {{ end }}
+
+  {{/* Header */}}
+  <header>
+    {{ if .Params.showBreadcrumbs | default (site.Params.list.showBreadcrumbs | default false) }}
+    {{ partial "breadcrumbs.html" . }}
+    {{ end }}
+    <h1 class="mt-5 text-4xl font-extrabold text-neutral-900 dark:text-neutral">{{ .Title }}</h1>
+    <div class="mt-1 mb-2 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+      {{ partial "article-meta/list.html" (dict "context" . "scope" "single") }}
+    </div>
+  </header>
+
+  {{/* Description (markdown content from news/_index.md) */}}
+  {{ $tocMargin := cond $showToc "mt-12" "mt-0" }}
+  {{ $topClass := cond (hasPrefix site.Params.header.layout "fixed") "lg:top-[140px]" "lg:top-10" }}
+  <section class="{{ $tocMargin }} prose flex max-w-full flex-col dark:prose-invert lg:flex-row mb-10">
+    {{ if $showToc }}
+    <div class="order-first lg:ms-auto px-0 lg:order-last lg:ps-8 lg:max-w-2xs">
+      <div class="toc ps-5 print:hidden lg:sticky {{ $topClass }}">
+        {{ partial "toc.html" . }}
+      </div>
+    </div>
+    {{ end }}
+    <div class="min-w-0 min-h-0 max-w-prose w-full">
+      {{ .Content }}
+    </div>
+  </section>
+
+  {{/* Year Navigation */}}
+  {{ $groups := .Pages.GroupByDate "2006" }}
+  {{ if gt (len $groups) 1 }}
+  <nav class="news-year-nav" aria-label="News archive years">
+    <span class="news-year-label">Jump to year:</span>
+    <div class="news-year-links">
+      {{ range $groups }}
+      <a href="#year-{{ .Key }}" class="news-year-btn">
+        {{ .Key }}
+      </a>
+      {{ end }}
+    </div>
+  </nav>
+  {{ end }}
+
+  {{/* News Items with Full Content Grouped by Year */}}
+  {{ if gt .Pages 0 }}
+  <section class="w-full space-y-16">
+    {{ range (.Paginate (.Pages.GroupByDate "2006")).PageGroups }}
+    <div class="news-group">
+      <h2 id="year-{{ .Key }}"
+        class="news-group-header mt-16 text-3xl font-extrabold text-neutral-800 dark:text-neutral-200 first:mt-8 border-b-2 border-neutral-300 dark:border-neutral-700 pb-2 mb-8">
+        {{ .Key }}
+      </h2>
+      <div class="space-y-12">
+        {{ range .Pages }}
+        {{ $featuredURL := "" }}
+        {{ if not .Params.hideFeatureImage }}
+        {{ if .Params.featureimage }}
+        {{ if or (strings.HasPrefix .Params.featureimage "http:") (strings.HasPrefix .Params.featureimage "https:") }}
+        {{ $featuredURL = .Params.featureimage }}
+        {{ else }}
+        {{ $res := resources.Get .Params.featureimage }}
+        {{ if $res }}
+        {{ $featuredURL = $res.RelPermalink }}
+        {{ else }}
+        {{ $featuredURL = relURL .Params.featureimage }}
+        {{ end }}
+        {{ end }}
+        {{ else }}
+        {{ $images := .Resources.ByType "image" }}
+        {{ $featured := "" }}
+        {{ range slice "*feature*" "*cover*" "*thumbnail*" }}
+        {{ if not $featured }}{{ $featured = $images.GetMatch . }}{{ end }}
+        {{ end }}
+        {{ with $featured }}
+        {{ $featuredURL = .RelPermalink }}
+        {{ end }}
+        {{ end }}
+        {{ end }}
+        <article class="news-article">
+          <header class="mb-4">
+            <h3 class="text-2xl font-extrabold text-neutral-900 dark:text-neutral">
+              <a href="{{ .RelPermalink }}" class="hover:underline hover:underline-offset-2">
+                {{ .Title | emojify }}
+              </a>
+            </h3>
+            <div class="mt-2 text-sm text-neutral-500 dark:text-neutral-400">
+              {{ partial "article-meta/basic.html" (dict "context" . "scope" "single") }}
+            </div>
+          </header>
+          {{ if $featuredURL }}
+          <div class="news-featured-image-wrapper">
+            <img src="{{ $featuredURL }}" alt="{{ .Title }}" loading="lazy" class="news-featured-image not-prose" />
+          </div>
+          {{ end }}
+          <div class="prose dark:prose-invert max-w-none" style="max-width: none;">
+            {{ .Content }}
+          </div>
+        </article>
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+  </section>
+  {{ else }}
+  <section class="mt-10 prose dark:prose-invert">
+    <p class="py-8 border-t">
+      <em>{{ i18n "list.no_articles" | emojify }}</em>
+    </p>
+  </section>
+  {{ end }}
+  {{ partial "pagination.html" . }}
+  {{ end }}

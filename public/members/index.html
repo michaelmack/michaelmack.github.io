@@ -15,8 +15,8 @@
 
   
   
-    <title>Members &middot; Mack Lab @ UofT</title>
-    <meta name="title" content="Members &middot; Mack Lab @ UofT">
+    <title>Mack Lab Members &middot; Mack Lab @ UofT</title>
+    <meta name="title" content="Mack Lab Members &middot; Mack Lab @ UofT">
   
 
   
@@ -38,13 +38,15 @@
   
   <meta property="og:url" content="http://localhost:1313/members/">
   <meta property="og:site_name" content="Mack Lab @ UofT">
-  <meta property="og:title" content="Members">
+  <meta property="og:title" content="Mack Lab Members">
+  <meta property="og:description" content="Meet the members of the Mack Lab!">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="website">
 
   
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Members">
+  <meta name="twitter:title" content="Mack Lab Members">
+  <meta name="twitter:description" content="Meet the members of the Mack Lab!">
 
   
   
@@ -91,8 +93,8 @@
   <link
     type="text/css"
     rel="stylesheet"
-    href="/css/main.bundle.min.e5407c0ad9d57f7cd0d9918618994a242c3a9f3d0a391e8c632b5ba61c34e2bb79ecc311ae9a5566fe799a467b1084739f6a2202b431eb687799473051207167.css"
-    integrity="sha512-5UB8CtnVf3zQ2ZGGGJlKJCw6nz0KOR6MYytbphw04rt57MMRrppVZv55mkZ7EIRzn2oiArQx62h3mUcwUSBxZw==">
+    href="/css/main.bundle.min.516a5197517807d748e390c02b705d3c2a381254a56da92ef580edc3c1f19f4ca75628256f1db56b5cf8f0c0c8940273c89eb5e0284e959b7f508cf0ff4dbf64.css"
+    integrity="sha512-UWpRl1F4B9dI45DAK3BdPCo4ElSlbaku9YDtw8Hxn0ynViglbx21a1z48MDIlAJzyJ614ChOlZt/UIzw/02/ZA==">
 
   
   
@@ -198,9 +200,9 @@
   [{
     "@context": "https://schema.org",
     "@type": "Article",
-    "articleSection": "Members",
-    "name": "Members",
-    "headline": "Members",
+    "articleSection": "Mack Lab Members",
+    "name": "Mack Lab Members",
+    "headline": "Mack Lab Members",
     
     "inLanguage": "en-us",
     "url" : "http://localhost:1313/members/",
@@ -217,7 +219,7 @@
     
     
     "mainEntityOfPage": "true",
-    "wordCount": "0"
+    "wordCount": "7"
   },
   {
     "@context": "https://schema.org",
@@ -225,7 +227,7 @@
     "itemListElement": [{
         "@type": "ListItem",
         "position":  1 ,
-        "name": "Members",
+        "name": "Mack Lab Members",
         "item": "http://localhost:1313/members/"
       }
     ]
@@ -355,24 +357,6 @@
       
         <span class="text-base font-medium break-normal">
           Members
-        </span>
-      
-    </a>
-  
-
-    
-      
-  
-    <a
-      href="/research"
-      
-      class="flex items-center bf-icon-color-hover"
-      aria-label="Research"
-      title="">
-      
-      
-        <span class="text-base font-medium break-normal">
-          Research
         </span>
       
     </a>
@@ -547,23 +531,6 @@
     
     <div class="px-2">
       <a
-        href="/research"
-        aria-label="Research"
-        
-        class="flex items-center gap-4 group bf-icon-color-hover text-neutral-700 dark:text-neutral-200">
-        
-        <span title="" class="text-2xl font-bold tracking-tight">
-          Research
-        </span>
-        
-      </a>
-
-      
-    </div>
-  
-    
-    <div class="px-2">
-      <a
         href="/publications"
         aria-label="Publications"
         
@@ -669,25 +636,163 @@
     <div class="relative flex flex-col grow">
       <main id="main-content" class="grow">
         
+
+
+ <style>
+  .member-article {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+  padding-bottom: 3rem;
+  }
+  @media (min-width: 768px) {
+  .member-article {
+  flex-direction: row;
+  gap: 2.5rem;
+  }
+  }
+  .member-image-wrapper {
+  width: 140px;
+  height: 182px;
+  flex-shrink: 0;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  border: 3px solid #00adef;
+  }
+  @media (min-width: 768px) {
+  .member-image-wrapper {
+  width: 180px;
+  height: 234px;
+  }
+  }
+  .member-content {
+  flex-grow: 1;
+  min-width: 0;
+  }
+  .member-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  }
+  .member-title {
+  font-size: 1.875rem;  
+  font-weight: 800;  
+  }
+  .member-role {
+  font-size: 1.125rem;  
+  font-weight: 600;  
+  color: #00adef;
+  margin-top: 0.25rem;
+  }
+  .member-contact {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  }
+  .member-email-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.875rem;
+  text-decoration: none !important;
+  transition: color 0.2s ease;
+  }
+  .member-email-link:hover {
+  color: #00adef !important;
+  }
+  .member-social-links {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  }
+  .member-social-icon {
+  display: inline-flex;
+  align-items: center;
+  color: #888888;
+  transition: color 0.2s ease, transform 0.2s ease;
+  text-decoration: none !important;
+  }
+  .member-social-icon:hover {
+  color: #00adef !important;
+  transform: scale(1.1);
+  }
+  .member-social-icon .icon svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  fill: currentColor;
+  }
+
+   
+  .member-role-nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid rgba(156, 163, 175, 0.25);
+  }
+  .dark .member-role-nav {
+  border-bottom-color: rgba(75, 85, 99, 0.4);
+  }
+  .member-role-label {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+  color: #00adef;
+  }
+  .member-role-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  }
+  .member-role-btn {
+  display: inline-block;
+  padding: 0.35rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  border: 1px solid rgba(0, 173, 239, 0.3);
+  color: #00adef !important;
+  text-decoration: none !important;
+  background-color: rgba(0, 173, 239, 0.05);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .member-role-btn:hover {
+  background-color: #00adef;
+  color: #ffffff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 173, 239, 0.3);
+  }
+  .member-role-btn:active {
+  transform: translateY(0);
+  }
+  .member-role-header {
+  scroll-margin-top: 100px;
+  }
+  </style>
+
   
   
   
+  
+  
+
+
+
+
+
+
 
   
   
     
-    
-      
-
-
-
-
-
-
-
-  
-  
-    
   
     
   
@@ -710,43 +815,13 @@
 
 
 
-    
+  
   
 
   
   <header>
     
-    <h1 class="mt-5 text-4xl font-extrabold text-neutral-900 dark:text-neutral">Members</h1>
-    <div class="mt-1 mb-2 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
-      
-
-
-
-
-
-  
-  
-
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  <div class="flex flex-row flex-wrap items-center">
-    
-    
-  </div>
-
-
-    </div>
+    <h1 class="mt-5 text-4xl font-extrabold text-neutral-900 dark:text-neutral">Mack Lab Members</h1>
   </header>
 
   
@@ -755,158 +830,441 @@
   <section class="mt-0 prose flex max-w-full flex-col dark:prose-invert lg:flex-row mb-10">
     
     <div class="min-w-0 min-h-0 max-w-prose w-full">
-      
+      <p>Meet the members of the Mack Lab!</p>
+
     </div>
   </section>
 
   
   
-    
-    
-    
-    
-    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 
-    
+  
+  
+
+  
+  <nav class="member-role-nav" aria-label="Team roles navigation">
+    <span class="member-role-label">Jump to:</span>
+    <div class="member-role-links">
       
+      <a href="#role-principal-investigator" class="member-role-btn">
+        Principal Investigator
+      </a>
+      
+      <a href="#role-graduate-student" class="member-role-btn">
+        Graduate Student
+      </a>
+      
+      <a href="#role-thesis-student" class="member-role-btn">
+        Thesis Student
+      </a>
+      
+      <a href="#role-research-assistant" class="member-role-btn">
+        Research Assistant
+      </a>
+      
+      <a href="#role-alumni" class="member-role-btn">
+        Alumni
+      </a>
+      
+    </div>
+  </nav>
+  
+
+  
+  
+  <section class="w-full space-y-16">
+    
+    
+    
+    
+    <div class="member-group">
+      <h2 id="role-principal-investigator"
+        class="member-role-header mt-16 text-3xl font-extrabold text-neutral-800 dark:text-neutral-200 first:mt-8 border-b-2 border-neutral-300 dark:border-neutral-700 pb-2 mb-8">
+        Principal Investigator
+      </h2>
+      
+      <div class="space-y-12">
         
+        <article class="member-article border-b border-neutral-200 dark:border-neutral-700 last:border-b-0 pb-12">
           
-            <h2 class="mt-12 mb-3 text-2xl font-bold text-neutral-700 first:mt-8 dark:text-neutral-300">
-              0001
-            </h2>
-            <section class="w-full grid gap-4 sm:grid-cols-2 md:grid-cols-3">
-              
+          <div class="member-image-wrapper">
+            <img src="/images/michael_mack.jpg" alt="Dr. Michael Mack" loading="lazy"
+              class="member-image not-prose" />
+          </div>
+          
+
+          <div class="member-content">
+            <header class="mb-4">
+              <h3 class="member-title text-neutral-900 dark:text-neutral">
+                Dr. Michael Mack
+              </h3>
+
+              <div class="member-contact">
+                
+                <a href="mailto:michael.mack@utoronto.ca" class="member-email-link text-neutral-500 dark:text-neutral-400"
+                  title="Email Dr. Michael Mack">
+                  <span class="inline-block align-text-bottom w-4 h-4"><span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg></span></span>
+                  <span>michael.mack@utoronto.ca</span>
+                </a>
                 
 
+                
+                <div class="member-social-links ml-2">
+                  
+                  <a href="https://scholar.google.com/citations?user=xyz" target="_blank" rel="noopener noreferrer" class="member-social-icon"
+                    title="google-scholar">
+                    <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 385"><g><path fill="currentColor" d="M 323.28223,42.662430 V 15.430205 L 343.04720,0 H 129.15709 L 0,112.2736 h 85.656075 c -0.15534,2.12494 -0.21914,4.04644 -0.21914,6.22563 0,20.84472 7.2192,38.08662 21.67203,51.86089 14.45284,13.79702 32.25124,20.64784 53.32651,20.64784 4.92319,0 9.75059,-0.36794 14.43842,-1.02419 -2.90722,6.50082 -4.37457,12.52302 -4.37457,18.14228 0,9.87526 4.49924,20.4304 13.46715,31.6418 -39.23377,2.6705 -68.06112,9.73264 -86.43702,21.16322 -10.53108,6.49907 -19.000207,14.70396 -25.390349,24.5311 -6.390569,9.89933 -9.577754,20.51525 -9.577754,31.9616 0,9.64822 2.062375,18.33611 6.21907,26.06233 4.156694,7.7263 9.577757,14.07047 16.312223,18.98408 6.71825,4.96781 14.46899,9.10088 23.219,12.46874 8.73429,3.34378 17.40643,5.71858 26.06106,7.06258 8.62707,1.34222 17.20471,1.9985 25.70579,1.9985 13.46887,0 26.95353,-1.73428 40.54711,-5.18707 13.56165,-3.48461 26.28022,-8.64143 38.17105,-15.4927 11.85935,-6.80488 21.51545,-16.0865 28.9219,-27.7183 7.39024,-11.67998 11.09457,-24.80499 11.09457,-39.33613 0,-11.01584 -2.24964,-21.03852 -6.7502,-30.14073 -4.46864,-9.07202 -9.93785,-16.54102 -16.45271,-22.34403 -6.5008,-5.81263 -12.99987,-11.15539 -19.51512,-15.9679 -6.50083,-4.84488 -12.00021,-9.75058 -16.46884,-14.8129 -4.4848,-5.04657 -6.73444,-10.05419 -6.73444,-14.98395 0,-4.92145 1.73422,-9.67183 5.21588,-14.26559 3.45451,-4.6095 7.67376,-9.04795 12.60967,-13.30571 4.93756,-4.24944 9.87523,-8.96788 14.79665,-14.13302 4.92147,-5.14719 9.14072,-11.82739 12.60971,-20.00822 3.48467,-8.17907 5.20318,-17.44489 5.20318,-27.75679 0,-13.4527 -2.54714,-24.46065 -7.54735,-33.31348 -0.59369,-1.02243 -1.21757,-1.80338 -1.87511,-3.02225 l 56.90745,-46.672136 v 17.118526 c -7.39373,0.92969 -6.62422,5.34582 -6.62422,10.6352 v 128.66719 c 0,5.95832 4.8751,10.83382 10.83386,10.83382 h 3.98869 c 5.95835,0 10.83386,-4.87506 10.83386,-10.83382 V 53.29282 c 0,-5.27669 0.77741,-9.68801 -6.56167,-10.63039 z M 215.92220,265.14114 c 1.14099,0.7503 3.7039,2.78075 7.7184,6.03838 4.0495,3.24319 6.797,5.69582 8.26567,7.41432 1.43851,1.66381 3.5792,4.16501 6.37617,7.54734 2.81268,3.3744 4.7184,6.30394 5.71853,8.73425 1.00016,2.4767 2.01603,5.46089 3.04636,8.94556 0.98567,3.44488 1.48486,6.97595 1.48486,10.56169 0,17.04813 -6.56338,29.68007 -19.65604,37.85915 -13.125,8.18083 -28.76651,12.27368 -46.93767,12.27368 -9.18709,0 -18.2031,-1.09289 -27.06247,-3.1951 -8.84322,-2.11665 -17.31192,-5.3362 -25.39035,-9.60185 -8.07846,-4.25771 -14.57754,-10.20337 -19.50072,-17.79659 -4.93764,-7.64012 -7.40645,-16.41464 -7.40645,-26.24962 0,-10.32022 2.79692,-19.28987 8.42233,-26.90588 5.59343,-7.62564 12.93774,-13.3919 22.03208,-17.3154 9.0624,-3.94582 18.24946,-6.74232 27.56166,-8.39827 9.31221,-1.7023 18.79679,-2.555 28.43842,-2.555 4.46862,0 7.93582,0.25115 10.40465,0.69607 0.45456,0.21918 3.03188,2.07025 7.73456,5.56326 4.70401,3.46237 7.62565,5.59519 8.75047,6.38401 z m -3.35823,-100.5779 c -7.40648,8.85938 -17.73454,13.2882 -30.95363,13.2882 -11.85933,0 -22.29766,-4.76482 -31.26554,-14.31195 -8.99984,-9.52309 -15.42235,-20.32803 -19.34408,-32.43061 -3.93752,-12.10871 -5.90585,-23.98423 -5.90585,-35.648 0,-13.6942 3.59542,-25.35184 10.7809,-34.97598 7.18727,-9.64952 17.49915,-14.48477 30.93786,-14.48477 11.87507,0 22.37423,5.03825 31.43704,15.15677 9.09434,10.08482 15.60961,21.41303 19.5169,33.96799 3.92176,12.5392 5.87345,24.52979 5.87345,35.98399 0,13.44658 -3.70256,24.60984 -11.07663,33.45436 z"/></g></svg></span>
+                  </a>
+                  
+                  <a href="https://www.dropbox.com/s/m7cz2j6dtqgmr8a/Mack_CV.pdf?dl=0" target="_blank" rel="noopener noreferrer" class="member-social-icon"
+                    title="file-lines">
+                    <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+  <path fill="currentColor" d="M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V160H256c-17.7 0-32-14.3-32-32V0H64zM256 0V128H384L256 0zM112 256H272c8.8 0 16 7.2 16 16s-7.2 16-16 16H112c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64H272c8.8 0 16 7.2 16 16s-7.2 16-16 16H112c-8.8 0-16-7.2-16-16s7.2-16 16-16zm0 64H272c8.8 0 16 7.2 16 16s-7.2 16-16 16H112c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/>
+</svg>
+</span>
+                  </a>
+                  
+                </div>
+                
+              </div>
+            </header>
 
+            <div class="prose dark:prose-invert max-w-none" style="max-width: none;">
+              <p>Associate Professor<br>Department of Psychology</p>
+<p><em>Ph.D. in Psychology, Vanderbilt University, 2011<br>
+M.Sc. in Computer Science, Michigan State, 2005<br>
+B.Sc. in Computer Science, Michigan State, 2003</em></p>
 
-
-
-
-
-
-
-  
-  
-    
-
-    
-    
-      
-      
+            </div>
+          </div>
+        </article>
         
+      </div>
       
-        
-      
-        
-      
-    
-
-    
-    
-      
-      
-    
-
-    
-    
-      
-    
-  
-
-
-
-<article
-  class="article-link--card relative min-h-full min-w-full overflow-hidden rounded-lg border border-neutral-300 dark:border-neutral-600">
-  
-  
-  <div class="p-4">
-    <header>
-      <a
-        
-          href="/members/michael-mack/"
-        
-        class="not-prose before:absolute before:inset-0 decoration-primary-500 dark:text-neutral text-xl font-bold text-neutral-800 hover:underline hover:underline-offset-2">
-        <h2>
-          Dr. Michael Mack
-          
-        </h2>
-      </a>
-    </header>
-    <div class="text-sm text-neutral-500 dark:text-neutral-400">
-      
-
-
-
-
-
-
-
-  
-
-  
-  
-  
-    
-  
-
-  
-
-  
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  <div class="flex flex-row flex-wrap items-center">
-    
-    
-      <time datetime="0001-01-01T00:00:00&#43;00:00">1 January 0001</time>
-    
-
-    
-    
-  </div>
-
-  
-
-  
-  
-
-
     </div>
     
-  </div>
-  <div class="px-6 pt-4 pb-2"></div>
-</article>
-
-              
-            </section>
-          
-        
-
-      
-      
     
-  
-  
+    
+    
+    
+    
+    
+    
+    
+    <div class="member-group">
+      <h2 id="role-graduate-student"
+        class="member-role-header mt-16 text-3xl font-extrabold text-neutral-800 dark:text-neutral-200 first:mt-8 border-b-2 border-neutral-300 dark:border-neutral-700 pb-2 mb-8">
+        Graduate Student
+      </h2>
+      
+      <div class="space-y-12">
+        
+        <article class="member-article border-b border-neutral-200 dark:border-neutral-700 last:border-b-0 pb-12">
+          
+          <div class="member-image-wrapper">
+            <img src="https://macklab.utoronto.ca/uploads/8/1/8/3/8183/published/img-0966.png?1757342512" alt="Maddie Bloomberg" loading="lazy"
+              class="member-image not-prose" />
+          </div>
+          
+
+          <div class="member-content">
+            <header class="mb-4">
+              <h3 class="member-title text-neutral-900 dark:text-neutral">
+                Maddie Bloomberg
+              </h3>
+
+              <div class="member-contact">
+                
+                <a href="mailto:madeline.bloomberg@mail.utoronto.ca" class="member-email-link text-neutral-500 dark:text-neutral-400"
+                  title="Email Maddie Bloomberg">
+                  <span class="inline-block align-text-bottom w-4 h-4"><span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg></span></span>
+                  <span>madeline.bloomberg@mail.utoronto.ca</span>
+                </a>
+                
+
+                
+              </div>
+            </header>
+
+            <div class="prose dark:prose-invert max-w-none" style="max-width: none;">
+              <p><em>Hon. B.A. in Psychology, Western University</em><br>
+<em>M.Sc. in Cognitive, Developmental, and Brain Sciences, Western University</em><br>
+<em>Ph.D. Student, University of Toronto</em></p>
+<p>Maddie is an incoming graduate student for Fall 2025. She completed her master&rsquo;s at Western University studying individual differences in concept learning. Her research interests center on how people learn and use conceptual knowledge, the mechanisms that support memory updating and creation, and how prior knowledge is applied to new situations. Outside of research, she enjoys being active, searching for the best iced coffee in the city, and experimenting with new recipes.</p>
+
+            </div>
+          </div>
+        </article>
+        
+      </div>
+      
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="member-group">
+      <h2 id="role-thesis-student"
+        class="member-role-header mt-16 text-3xl font-extrabold text-neutral-800 dark:text-neutral-200 first:mt-8 border-b-2 border-neutral-300 dark:border-neutral-700 pb-2 mb-8">
+        Thesis Student
+      </h2>
+      
+      <div class="space-y-12">
+        
+        <article class="member-article border-b border-neutral-200 dark:border-neutral-700 last:border-b-0 pb-12">
+          
+          <div class="member-image-wrapper">
+            <img src="https://macklab.utoronto.ca/uploads/8/1/8/3/8183/published/img-0509-copy-2.png?1768922584" alt="Mohan Yuan" loading="lazy"
+              class="member-image not-prose" />
+          </div>
+          
+
+          <div class="member-content">
+            <header class="mb-4">
+              <h3 class="member-title text-neutral-900 dark:text-neutral">
+                Mohan Yuan
+              </h3>
+
+              <div class="member-contact">
+                
+
+                
+              </div>
+            </header>
+
+            <div class="prose dark:prose-invert max-w-none" style="max-width: none;">
+              <p><em>University of Toronto
+Psychology Research Specialist, Computer Science Minor</em></p>
+<p>Mohan is an honours thesis student in the Mack Lab. She is particularly interested in the underlying mechanisms of human memory and learning. She is currently working on a project investigating how attentional processes unfold during learning by tracking eye movements. In her free time, she enjoys drawing, discovering new recipes, and exploring matcha desserts around Toronto.</p>
+
+            </div>
+          </div>
+        </article>
+        
+      </div>
+      
+    </div>
+    
+    
+    
+    
+    
+    <div class="member-group">
+      <h2 id="role-research-assistant"
+        class="member-role-header mt-16 text-3xl font-extrabold text-neutral-800 dark:text-neutral-200 first:mt-8 border-b-2 border-neutral-300 dark:border-neutral-700 pb-2 mb-8">
+        Research Assistant
+      </h2>
+      
+      <div class="space-y-12">
+        
+        <article class="member-article border-b border-neutral-200 dark:border-neutral-700 last:border-b-0 pb-12">
+          
+          <div class="member-image-wrapper">
+            <img src="https://macklab.utoronto.ca/uploads/8/1/8/3/8183/published/img-7388.png?1757343163" alt="Linda He" loading="lazy"
+              class="member-image not-prose" />
+          </div>
+          
+
+          <div class="member-content">
+            <header class="mb-4">
+              <h3 class="member-title text-neutral-900 dark:text-neutral">
+                Linda He
+              </h3>
+
+              <div class="member-contact">
+                
+
+                
+              </div>
+            </header>
+
+            <div class="prose dark:prose-invert max-w-none" style="max-width: none;">
+              <p><em>University of Toronto
+Psychology Research Specialist, Bioethics and Sociology Minor</em></p>
+<p>Linda was a thesis student in the MackLab and continues working on her project as a research assistant. She is currently a lab manager with the Duncan and Finn labs. She is passionate about cognitive neuroscience research, and is currently working on projects investigating semantic memory updating during category exception learning and the psychophysiological signatures of insight. She has additional interests in understanding how neurological and psychiatric disorders impact cognitive functioning. Outside of the lab, she enjoys bouldering, practicing ballet, playing guitar, and listening to live music.</p>
+
+            </div>
+          </div>
+        </article>
+        
+      </div>
+      
+    </div>
+    
+    
+    
+    
+    
+    <div class="member-group">
+      <h2 id="role-alumni"
+        class="member-role-header mt-16 text-3xl font-extrabold text-neutral-800 dark:text-neutral-200 first:mt-8 border-b-2 border-neutral-300 dark:border-neutral-700 pb-2 mb-8">
+        Alumni
+      </h2>
+      
+      <div class="prose dark:prose-invert max-w-none" style="max-width: none;">
+        
+        
+<h3 class="relative group">Graduate Students
+    <div id="graduate-students" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#graduate-students" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<ul>
+<li><strong>Dory (Yongzhen) Xie, Ph.D.</strong> – <em>Postdoctoral Researcher, NICT/Osaka University</em></li>
+<li><strong>Melisa Gumus, Ph.D.</strong> – <em>Postdoctoral Fellow, UC Berkeley</em></li>
+<li><strong>Emily Heffernan, Ph.D.</strong> – <em>Postdoctoral Fellow, University of Toronto</em></li>
+<li><strong>Mateja Perovic, Ph.D.</strong> – <em>Postdoctoral Fellow, CAMH</em></li>
+<li><strong>Gaeun Son, Ph.D.</strong> – <em>Assistant Professor, Sungshin Women’s University</em></li>
+<li><strong>Juliana Adema</strong></li>
+</ul>
+
+<h3 class="relative group">Postdoctoral Fellows
+    <div id="postdoctoral-fellows" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#postdoctoral-fellows" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<ul>
+<li><strong>Anna Blumenthal, Ph.D.</strong> – <em>Assistant Professor, Marist University</em></li>
+<li><strong>Sagana Vijayarajah, Ph.D.</strong> – <em>Senior Manager, Lung Health Foundation</em></li>
+<li><strong>Frida Printzlau, Ph.D.</strong> – <em>Research Coordinator, Branksome Hall</em></li>
+</ul>
+
+<h3 class="relative group">Past Lab Managers
+    <div id="past-lab-managers" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#past-lab-managers" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<ul>
+<li><strong>Jessie Song</strong> – <em>PhD student in IMS, University of Toronto</em></li>
+<li><strong>Sanjivan Loganathan</strong> – <em>M.Sc. student, Western University</em></li>
+<li><strong>Emily (Emmy) Wang</strong> – <em>MA-PhD student in Clinical Neuropsychology, University of Windsor</em></li>
+<li><strong>Carleigh Pace-Tonna</strong> – <em>PhD student in Psychology, University of Toronto</em></li>
+</ul>
+
+<h3 class="relative group">Past Undergraduate Students &amp; Research Assistants
+    <div id="past-undergraduate-students--research-assistants" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#past-undergraduate-students--research-assistants" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<div class="alumni-grid">
+<ul>
+<li><strong>Lina Al Halabi</strong></li>
+<li><strong>Nahal Alizadeh Saghati</strong></li>
+<li><strong>Christine Arrabito</strong></li>
+<li><strong>Shree Bhattarai</strong></li>
+<li><strong>Athanasios Bourganos</strong></li>
+<li><strong>Yao (Frances) Chen</strong></li>
+<li><strong>Jason Chow</strong></li>
+<li><strong>Elliane Croce</strong></li>
+<li><strong>Brad Dalgleish</strong></li>
+<li><strong>Paige Denega</strong></li>
+<li><strong>Julia Do</strong></li>
+<li><strong>Johnny Dubois</strong></li>
+<li><strong>Chanel Fu</strong></li>
+<li><strong>Selina Fu</strong></li>
+<li><strong>Julia Gonsalves</strong></li>
+<li><strong>Zosia Gontarz</strong></li>
+<li><strong>Belinda Hoang</strong></li>
+<li><strong>Janice Jianqi Hou</strong></li>
+<li><strong>Rafidal Islam</strong></li>
+<li><strong>Cathlin Jiaqi Han</strong></li>
+<li><strong>Phil Johnston</strong></li>
+<li><strong>Kevin Kadak</strong></li>
+<li><strong>Rajdeep Kalsi</strong></li>
+<li><strong>Zoey Zhi Yi Lee</strong></li>
+<li><strong>Stella Leowinata</strong></li>
+<li><strong>Ian Mahoney</strong></li>
+<li><strong>Trisha Menon</strong></li>
+<li><strong>Aaron Rambhajan</strong></li>
+<li><strong>Josh Seltzer</strong></li>
+<li><strong>Shuran Tang</strong></li>
+<li><strong>Marian Wang</strong></li>
+<li><strong>Xinyaun (Zoe) Wu</strong></li>
+<li><strong>Xuan (Sophia) Zhang</strong></li>
+<li><strong>Alicia Tang</strong></li>
+<li><strong>Emily Zhang</strong></li>
+<li><strong>Sima Buchnak</strong></li>
+<li><strong>Sumaiya Nathani</strong></li>
+<li><strong>Michelle Zhao</strong></li>
+<li><strong>Xing Yao (Eunice) Zhu</strong></li>
+<li><strong>Teresa Zhu</strong></li>
+</ul>
+</div>
+
+        
+      </div>
+      
+    </div>
+    
+    
+
+    
+    
+  </section>
   
 
+  
         
 
 
@@ -984,7 +1342,7 @@
 </div>
 <div class="footer-logo-container">
     <a href="https://www.utoronto.ca/" alt="UofT">
-        <img src="images/utlogo_white.png" alt="University of Toronto Logo" style="width: 250px;" />
+        <img src="/images/utlogo_white.png" alt="University of Toronto Logo" style="width: 250px;" />
     </a>
 </div>
 

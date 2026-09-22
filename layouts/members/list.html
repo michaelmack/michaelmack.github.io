@@ -1,0 +1,346 @@
+{{ define "main" }}
+{{ .Scratch.Set "scope" "list" }}
+{{ $enableToc := .Params.showTableOfContents | default (site.Params.list.showTableOfContents | default false) }}
+{{ $showToc := and $enableToc (in .TableOfContents "<ul") }} <style>
+  .member-article {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+  padding-bottom: 3rem;
+  }
+  @media (min-width: 768px) {
+  .member-article {
+  flex-direction: row;
+  gap: 2.5rem;
+  }
+  }
+  .member-image-wrapper {
+  width: 140px;
+  height: 182px;
+  flex-shrink: 0;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  border: 3px solid #00adef;
+  }
+  @media (min-width: 768px) {
+  .member-image-wrapper {
+  width: 180px;
+  height: 234px;
+  }
+  }
+  .member-content {
+  flex-grow: 1;
+  min-width: 0;
+  }
+  .member-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  }
+  .member-title {
+  font-size: 1.875rem; /* text-3xl */
+  font-weight: 800; /* font-extrabold */
+  }
+  .member-role {
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 600; /* font-semibold */
+  color: #00adef;
+  margin-top: 0.25rem;
+  }
+  .member-contact {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  }
+  .member-email-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.875rem;
+  text-decoration: none !important;
+  transition: color 0.2s ease;
+  }
+  .member-email-link:hover {
+  color: #00adef !important;
+  }
+  .member-social-links {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  }
+  .member-social-icon {
+  display: inline-flex;
+  align-items: center;
+  color: #888888;
+  transition: color 0.2s ease, transform 0.2s ease;
+  text-decoration: none !important;
+  }
+  .member-social-icon:hover {
+  color: #00adef !important;
+  transform: scale(1.1);
+  }
+  .member-social-icon .icon svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  fill: currentColor;
+  }
+
+  /* Role Navigation Styling */
+  .member-role-nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid rgba(156, 163, 175, 0.25);
+  }
+  .dark .member-role-nav {
+  border-bottom-color: rgba(75, 85, 99, 0.4);
+  }
+  .member-role-label {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+  color: #00adef;
+  }
+  .member-role-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  }
+  .member-role-btn {
+  display: inline-block;
+  padding: 0.35rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 9999px;
+  border: 1px solid rgba(0, 173, 239, 0.3);
+  color: #00adef !important;
+  text-decoration: none !important;
+  background-color: rgba(0, 173, 239, 0.05);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .member-role-btn:hover {
+  background-color: #00adef;
+  color: #ffffff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 173, 239, 0.3);
+  }
+  .member-role-btn:active {
+  transform: translateY(0);
+  }
+  .member-role-header {
+  scroll-margin-top: 100px;
+  }
+  </style>
+
+  {{/* Hero */}}
+  {{ if site.Params.list.showHero | default false }}
+  {{ $heroStyle := print "hero/" site.Params.list.heroStyle ".html" }}
+  {{ if templates.Exists ( printf "partials/%s" $heroStyle ) }}
+  {{ partial $heroStyle . }}
+  {{ else }}
+  {{ partial "hero/basic.html" . }}
+  {{ end }}
+  {{ end }}
+
+  {{/* Header */}}
+  <header>
+    {{ if .Params.showBreadcrumbs | default (site.Params.list.showBreadcrumbs | default false) }}
+    {{ partial "breadcrumbs.html" . }}
+    {{ end }}
+    <h1 class="mt-5 text-4xl font-extrabold text-neutral-900 dark:text-neutral">{{ .Title }}</h1>
+  </header>
+
+  {{/* Description content from members/_index.md */}}
+  {{ $tocMargin := cond $showToc "mt-12" "mt-0" }}
+  {{ $topClass := cond (hasPrefix site.Params.header.layout "fixed") "lg:top-[140px]" "lg:top-10" }}
+  <section class="{{ $tocMargin }} prose flex max-w-full flex-col dark:prose-invert lg:flex-row mb-10">
+    {{ if $showToc }}
+    <div class="order-first lg:ms-auto px-0 lg:order-last lg:ps-8 lg:max-w-2xs">
+      <div class="toc ps-5 print:hidden lg:sticky {{ $topClass }}">
+        {{ partial "toc.html" . }}
+      </div>
+    </div>
+    {{ end }}
+    <div class="min-w-0 min-h-0 max-w-prose w-full">
+      {{ .Content }}
+    </div>
+  </section>
+
+  {{/* Role Navigation */}}
+  {{ $roles := slice "Principal Investigator" "Postdoctoral Fellow" "Graduate Student" "Lab Manager" "Thesis Student"
+  "Research Assistant" "Alumni" }}
+  {{ $activeRoles := slice }}
+  {{ range $roles }}
+  {{ $role := . }}
+  {{ $rolePages := where $.Pages "Params.role" $role }}
+  {{ if gt (len $rolePages) 0 }}
+  {{ $activeRoles = $activeRoles | append (dict "name" $role "id" (printf "role-%s" (urlize $role))) }}
+  {{ end }}
+  {{ end }}
+
+  {{ $fallbackPages := where $.Pages "Params.role" "not in" $roles }}
+  {{ if gt (len $fallbackPages) 0 }}
+  {{ $activeRoles = $activeRoles | append (dict "name" "Other Members" "id" "role-other-members") }}
+  {{ end }}
+
+  {{ if gt (len $activeRoles) 1 }}
+  <nav class="member-role-nav" aria-label="Team roles navigation">
+    <span class="member-role-label">Jump to:</span>
+    <div class="member-role-links">
+      {{ range $activeRoles }}
+      <a href="#{{ .id }}" class="member-role-btn">
+        {{ .name }}
+      </a>
+      {{ end }}
+    </div>
+  </nav>
+  {{ end }}
+
+  {{/* Member Items Organized by Role */}}
+  {{ if gt .Pages 0 }}
+  <section class="w-full space-y-16">
+    {{ range $roles }}
+    {{ $role := . }}
+    {{ $rolePages := where $.Pages "Params.role" $role }}
+    {{ if gt (len $rolePages) 0 }}
+    <div class="member-group">
+      <h2 id="role-{{ urlize $role }}"
+        class="member-role-header mt-16 text-3xl font-extrabold text-neutral-800 dark:text-neutral-200 first:mt-8 border-b-2 border-neutral-300 dark:border-neutral-700 pb-2 mb-8">
+        {{ $role }}
+      </h2>
+      {{ if eq $role "Alumni" }}
+      <div class="prose dark:prose-invert max-w-none" style="max-width: none;">
+        {{ range $rolePages }}
+        {{ .Content }}
+        {{ end }}
+      </div>
+      {{ else }}
+      <div class="space-y-12">
+        {{ range $rolePages.ByWeight }}
+        <article class="member-article border-b border-neutral-200 dark:border-neutral-700 last:border-b-0 pb-12">
+          {{ if .Params.image }}
+          <div class="member-image-wrapper">
+            <img src="{{ .Params.image }}" alt="{{ .Params.image_alt | default .Title }}" loading="lazy"
+              class="member-image not-prose" />
+          </div>
+          {{ end }}
+
+          <div class="member-content">
+            <header class="mb-4">
+              <h3 class="member-title text-neutral-900 dark:text-neutral">
+                {{ .Title | emojify }}
+              </h3>
+
+              <div class="member-contact">
+                {{ if .Params.email }}
+                <a href="mailto:{{ .Params.email }}" class="member-email-link text-neutral-500 dark:text-neutral-400"
+                  title="Email {{ .Title }}">
+                  <span class="inline-block align-text-bottom w-4 h-4">{{ partial "icon" "envelope" }}</span>
+                  <span>{{ .Params.email }}</span>
+                </a>
+                {{ end }}
+
+                {{ if .Params.social }}
+                <div class="member-social-links ml-2">
+                  {{ range .Params.social }}
+                  <a href="{{ .link }}" target="_blank" rel="noopener noreferrer" class="member-social-icon"
+                    title="{{ .icon }}">
+                    {{ partial "icon" .icon }}
+                  </a>
+                  {{ end }}
+                </div>
+                {{ end }}
+              </div>
+            </header>
+
+            <div class="prose dark:prose-invert max-w-none" style="max-width: none;">
+              {{ .Content }}
+            </div>
+          </div>
+        </article>
+        {{ end }}
+      </div>
+      {{ end }}
+    </div>
+    {{ end }}
+    {{ end }}
+
+    {{/* Fallback for any other roles not explicitly defined */}}
+    {{ if gt (len $fallbackPages) 0 }}
+    <div class="member-group">
+      <h2 id="role-other-members"
+        class="member-role-header mt-16 text-3xl font-extrabold text-neutral-800 dark:text-neutral-200 first:mt-8 border-b-2 border-neutral-300 dark:border-neutral-700 pb-2 mb-8">
+        Other Members
+      </h2>
+      <div class="space-y-12">
+        {{ range $fallbackPages.ByWeight }}
+        <article class="member-article border-b border-neutral-200 dark:border-neutral-700 last:border-b-0 pb-12">
+          {{ if .Params.image }}
+          <div class="member-image-wrapper">
+            <img src="{{ .Params.image }}" alt="{{ .Params.image_alt | default .Title }}" loading="lazy"
+              class="member-image not-prose" />
+          </div>
+          {{ end }}
+
+          <div class="member-content">
+            <header class="mb-4">
+              <h3 class="member-title text-neutral-900 dark:text-neutral">
+                {{ .Title | emojify }}
+              </h3>
+
+              {{ if .Params.role }}
+              <div class="member-role">
+                {{ .Params.role }}
+              </div>
+              {{ end }}
+
+              <div class="member-contact">
+                {{ if .Params.email }}
+                <a href="mailto:{{ .Params.email }}" class="member-email-link text-neutral-500 dark:text-neutral-400"
+                  title="Email {{ .Title }}">
+                  <span class="inline-block align-text-bottom w-4 h-4">{{ partial "icon" "envelope" }}</span>
+                  <span>{{ .Params.email }}</span>
+                </a>
+                {{ end }}
+
+                {{ if .Params.social }}
+                <div class="member-social-links ml-2">
+                  {{ range .Params.social }}
+                  <a href="{{ .link }}" target="_blank" rel="noopener noreferrer" class="member-social-icon"
+                    title="{{ .icon }}">
+                    {{ partial "icon" .icon }}
+                  </a>
+                  {{ end }}
+                </div>
+                {{ end }}
+              </div>
+            </header>
+
+            <div class="prose dark:prose-invert max-w-none" style="max-width: none;">
+              {{ .Content }}
+            </div>
+          </div>
+        </article>
+        {{ end }}
+      </div>
+    </div>
+    {{ end }}
+  </section>
+  {{ else }}
+  <section class="mt-10 prose dark:prose-invert">
+    <p class="py-8 border-t">
+      <em>No team members found.</em>
+    </p>
+  </section>
+  {{ end }}
+
+  {{ end }}

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Members on Mack Lab @ UofT</title>
+    <title>Mack Lab Members on Mack Lab @ UofT</title>
     <link>http://localhost:1313/members/</link>
-    <description>Recent content in Members on Mack Lab @ UofT</description>
+    <description>Recent content in Mack Lab Members on Mack Lab @ UofT</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
@@ -15,7 +15,47 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/members/michael-mack/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Michael Mack&lt;/strong&gt; is an Associate Professor in the Department of Psychology at the University of Toronto.&lt;/p&gt;&#xA;&lt;p&gt;His research interests include&amp;hellip; (Add more detail here).&lt;/p&gt;</description>
+      <description>&lt;p&gt;Associate Professor&lt;br&gt;Department of Psychology&lt;/p&gt;&#xA;&lt;p&gt;&lt;em&gt;Ph.D. in Psychology, Vanderbilt University, 2011&lt;br&gt;&#xA;M.Sc. in Computer Science, Michigan State, 2005&lt;br&gt;&#xA;B.Sc. in Computer Science, Michigan State, 2003&lt;/em&gt;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Maddie Bloomberg</title>
+      <link>http://localhost:1313/members/maddie-bloomberg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/members/maddie-bloomberg/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Hon. B.A. in Psychology, Western University&lt;/em&gt;&lt;br&gt;&#xA;&lt;em&gt;M.Sc. in Cognitive, Developmental, and Brain Sciences, Western University&lt;/em&gt;&lt;br&gt;&#xA;&lt;em&gt;Ph.D. Student, University of Toronto&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Maddie is an incoming graduate student for Fall 2025. She completed her master&amp;rsquo;s at Western University studying individual differences in concept learning. Her research interests center on how people learn and use conceptual knowledge, the mechanisms that support memory updating and creation, and how prior knowledge is applied to new situations. Outside of research, she enjoys being active, searching for the best iced coffee in the city, and experimenting with new recipes.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Linda He</title>
+      <link>http://localhost:1313/members/linda-he/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/members/linda-he/</guid>
+      <description>&lt;p&gt;&lt;em&gt;University of Toronto&#xA;Psychology Research Specialist, Bioethics and Sociology Minor&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Linda was a thesis student in the MackLab and continues working on her project as a research assistant. She is currently a lab manager with the Duncan and Finn labs. She is passionate about cognitive neuroscience research, and is currently working on projects investigating semantic memory updating during category exception learning and the psychophysiological signatures of insight. She has additional interests in understanding how neurological and psychiatric disorders impact cognitive functioning. Outside of the lab, she enjoys bouldering, practicing ballet, playing guitar, and listening to live music.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Mohan Yuan</title>
+      <link>http://localhost:1313/members/mohan-yuan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/members/mohan-yuan/</guid>
+      <description>&lt;p&gt;&lt;em&gt;University of Toronto&#xA;Psychology Research Specialist, Computer Science Minor&lt;/em&gt;&lt;/p&gt;&#xA;&lt;p&gt;Mohan is an honours thesis student in the Mack Lab. She is particularly interested in the underlying mechanisms of human memory and learning. She is currently working on a project investigating how attentional processes unfold during learning by tracking eye movements. In her free time, she enjoys drawing, discovering new recipes, and exploring matcha desserts around Toronto.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Lab Alumni</title>
+      <link>http://localhost:1313/members/alumni/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/members/alumni/</guid>
+      <description>&lt;h3 class=&#34;relative group&#34;&gt;Graduate Students&#xA;    &lt;div id=&#34;graduate-students&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;&#xA;    &#xA;    &lt;span&#xA;        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none&#34;&gt;&#xA;        &lt;a class=&#34;text-primary-300 dark:text-neutral-700 !no-underline&#34; href=&#34;#graduate-students&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;&#xA;    &lt;/span&gt;&#xA;    &#xA;&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Dory (Yongzhen) Xie, Ph.D.&lt;/strong&gt; – &lt;em&gt;Postdoctoral Researcher, NICT/Osaka University&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Melisa Gumus, Ph.D.&lt;/strong&gt; – &lt;em&gt;Postdoctoral Fellow, UC Berkeley&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Emily Heffernan, Ph.D.&lt;/strong&gt; – &lt;em&gt;Postdoctoral Fellow, University of Toronto&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Mateja Perovic, Ph.D.&lt;/strong&gt; – &lt;em&gt;Postdoctoral Fellow, CAMH&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Gaeun Son, Ph.D.&lt;/strong&gt; – &lt;em&gt;Assistant Professor, Sungshin Women’s University&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Juliana Adema&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&#xA;&lt;h3 class=&#34;relative group&#34;&gt;Postdoctoral Fellows&#xA;    &lt;div id=&#34;postdoctoral-fellows&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;&#xA;    &#xA;    &lt;span&#xA;        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none&#34;&gt;&#xA;        &lt;a class=&#34;text-primary-300 dark:text-neutral-700 !no-underline&#34; href=&#34;#postdoctoral-fellows&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;&#xA;    &lt;/span&gt;&#xA;    &#xA;&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Anna Blumenthal, Ph.D.&lt;/strong&gt; – &lt;em&gt;Assistant Professor, Marist University&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Sagana Vijayarajah, Ph.D.&lt;/strong&gt; – &lt;em&gt;Senior Manager, Lung Health Foundation&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Frida Printzlau, Ph.D.&lt;/strong&gt; – &lt;em&gt;Research Coordinator, Branksome Hall&lt;/em&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&#xA;&lt;h3 class=&#34;relative group&#34;&gt;Past Lab Managers&#xA;    &lt;div id=&#34;past-lab-managers&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;&#xA;    &#xA;    &lt;span&#xA;        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none&#34;&gt;&#xA;        &lt;a class=&#34;text-primary-300 dark:text-neutral-700 !no-underline&#34; href=&#34;#past-lab-managers&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;&#xA;    &lt;/span&gt;&#xA;    &#xA;&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Jessie Song&lt;/strong&gt; – &lt;em&gt;PhD student in IMS, University of Toronto&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Sanjivan Loganathan&lt;/strong&gt; – &lt;em&gt;M.Sc. student, Western University&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Emily (Emmy) Wang&lt;/strong&gt; – &lt;em&gt;MA-PhD student in Clinical Neuropsychology, University of Windsor&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Carleigh Pace-Tonna&lt;/strong&gt; – &lt;em&gt;PhD student in Psychology, University of Toronto&lt;/em&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&#xA;&lt;h3 class=&#34;relative group&#34;&gt;Past Undergraduate Students &amp;amp; Research Assistants&#xA;    &lt;div id=&#34;past-undergraduate-students--research-assistants&#34; class=&#34;anchor&#34;&gt;&lt;/div&gt;&#xA;    &#xA;    &lt;span&#xA;        class=&#34;absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none&#34;&gt;&#xA;        &lt;a class=&#34;text-primary-300 dark:text-neutral-700 !no-underline&#34; href=&#34;#past-undergraduate-students--research-assistants&#34; aria-label=&#34;Anchor&#34;&gt;#&lt;/a&gt;&#xA;    &lt;/span&gt;&#xA;    &#xA;&lt;/h3&gt;&#xA;&lt;div class=&#34;alumni-grid&#34;&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Lina Al Halabi&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Nahal Alizadeh Saghati&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Christine Arrabito&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Shree Bhattarai&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Athanasios Bourganos&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Yao (Frances) Chen&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Jason Chow&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Elliane Croce&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Brad Dalgleish&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Paige Denega&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Julia Do&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Johnny Dubois&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Chanel Fu&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Selina Fu&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Julia Gonsalves&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Zosia Gontarz&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Belinda Hoang&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Janice Jianqi Hou&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Rafidal Islam&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Cathlin Jiaqi Han&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Phil Johnston&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Kevin Kadak&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Rajdeep Kalsi&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Zoey Zhi Yi Lee&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Stella Leowinata&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Ian Mahoney&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Trisha Menon&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Aaron Rambhajan&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Josh Seltzer&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Shuran Tang&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Marian Wang&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Xinyaun (Zoe) Wu&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Xuan (Sophia) Zhang&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Alicia Tang&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Emily Zhang&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Sima Buchnak&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Sumaiya Nathani&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Michelle Zhao&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Xing Yao (Eunice) Zhu&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Teresa Zhu&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/div&gt;</description>
       
     </item>
     

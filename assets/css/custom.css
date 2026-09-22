@@ -42,6 +42,13 @@
   }
 }
 
+@media (max-width: 1000px) {
+  .logo {
+    max-width: calc(var(--spacing) * 50) !important;
+  }
+}
+
+
 /* Sidebar Styling */
 .recent-news-sidebar h2 {
   margin-top: 0 !important;
@@ -205,4 +212,67 @@
   color: white;
   margin-bottom: 0rem;
   margin-top: 0.5rem;
+}
+
+/* Ensure content layer is full width across all pages (e.g., participate, join, publications) matching members/news */
+.prose,
+.max-w-prose,
+.article-content {
+  max-width: 100% !important;
+}
+
+#single_header {
+  max-width: 100% !important;
+}
+
+section.prose>div {
+  max-width: 100% !important;
+}
+
+/* Diversity callout box */
+.diversity-callout {
+  background-color: #039edc !important;
+  border: 0px !important;
+  border-radius: 0;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+}
+
+.diversity-callout .diversity-title {
+  color: #ffffff !important;
+  font-size: 1.5rem !important;
+  font-weight: 700 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.diversity-callout p {
+  color: #ffffff !important;
+  line-height: 1.7 !important;
+  margin-bottom: 0 !important;
+}
+
+/* Alumni Section Styling */
+.alumni-grid ul {
+  column-count: 1;
+  column-gap: 2.5rem;
+  padding-left: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .alumni-grid ul {
+    column-count: 2;
+  }
+}
+
+@media (min-width: 1024px) {
+  .alumni-grid ul {
+    column-count: 3;
+  }
+}
+
+.alumni-grid ul li {
+  break-inside: avoid;
+  margin-bottom: 0.5rem;
 }
