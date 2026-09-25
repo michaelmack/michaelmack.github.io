@@ -1,14 +1,12 @@
 ---
-title: "Maddie Bloomberg"
-role: "Graduate Student"
-weight: 30
-email: "madeline.bloomberg@mail.utoronto.ca"
-image: "/images/members/maddie-bloomberg.png"
-image_alt: "Maddie Bloomberg"
+title: "Cate Brandt"
+role: "Lab Manager"
+weight: 20
+email: "macklabuoft@gmail.com"
+image: "/images/members/cate-brandt.jpg"
+image_alt: "Cate Brandt"
 ---
 
-*Hon. B.A. in Psychology, Western University*  
-*M.Sc. in Cognitive, Developmental, and Brain Sciences, Western University*  
-*Ph.D. Student, University of Toronto*
+*B.A. Honours in Psychology, Dalhousie University*
 
-Maddie is an incoming graduate student for Fall 2025. She completed her master's at Western University studying individual differences in concept learning. Her research interests center on how people learn and use conceptual knowledge, the mechanisms that support memory updating and creation, and how prior knowledge is applied to new situations. Outside of research, she enjoys being active, searching for the best iced coffee in the city, and experimenting with new recipes.
+Cate is interested in understanding the neural mechanisms that support learning and memory, how these processes change across development, and how adverse experiences may influence developmental outcomes. She is also interested in clinical psychology and the ways in which disruptions to typical development can impact psychological functioning and well-being. Outside of the lab, Cate enjoys baking for her friends and family, spending time outside, and reading.
