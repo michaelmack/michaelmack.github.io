@@ -3,7 +3,7 @@ title: "Maddie Bloomberg"
 role: "Graduate Student"
 weight: 30
 email: "madeline.bloomberg@mail.utoronto.ca"
-image: "https://macklab.utoronto.ca/uploads/8/1/8/3/8183/published/img-0966.png?1757342512"
+image: "/images/members/maddie-bloomberg.png"
 image_alt: "Maddie Bloomberg"
 ---
 

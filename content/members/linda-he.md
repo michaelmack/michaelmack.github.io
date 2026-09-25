@@ -2,7 +2,7 @@
 title: "Linda He"
 role: "Research Assistant"
 weight: 50
-image: "https://macklab.utoronto.ca/uploads/8/1/8/3/8183/published/img-7388.png?1757343163"
+image: "/images/members/linda-he.png"
 image_alt: "Linda He"
 ---
 

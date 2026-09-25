@@ -2,7 +2,7 @@
 title: "Mohan Yuan"
 role: "Thesis Student"
 weight: 50
-image: "https://macklab.utoronto.ca/uploads/8/1/8/3/8183/published/img-0509-copy-2.png?1768922584"
+image: "/images/members/mohan-yuan.png"
 image_alt: "Mohan Yuan"
 ---
 
