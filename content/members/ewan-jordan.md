@@ -3,6 +3,7 @@ title: "Ewan Jordan"
 role: "Graduate Student"
 weight: 30
 email: "ewan.jordan@mail.utoronto.ca"
+website: "https://www.cs.toronto.edu/~ewanjordan/"
 image: "/images/members/ewan-jordan.jpg"
 image_alt: "Ewan Jordan"
 ---
