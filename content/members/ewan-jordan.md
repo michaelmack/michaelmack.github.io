@@ -1,9 +1,8 @@
 ---
 title: "Ewan Jordan"
 role: "Graduate Student"
-weight: 30
+weight: 31
 email: "ewan.jordan@mail.utoronto.ca"
-website: "https://www.cs.toronto.edu/~ewanjordan/"
 image: "/images/members/ewan-jordan.jpg"
 image_alt: "Ewan Jordan"
 ---
@@ -12,3 +11,5 @@ image_alt: "Ewan Jordan"
 *Ph.D. Student, University of Toronto*
 
 Ewan is interested in how hippocampal mechanisms shape memory, and in turn, how memory shapes behaviour and perception. He completed his bachelor’s in computer science & cognitive science at UofT where he researched the impact of GenAI use on human creativity and dorsal-ventral stream emergence in ANNs. Outside of academics, he loves to make music and explore the world on his bicycle!
+
+[personal website](https://www.cs.toronto.edu/~ewanjordan/)
